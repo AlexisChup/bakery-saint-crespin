@@ -8,6 +8,7 @@
 
 h1, h2, h3, h4 {
     font-family: 'Montserrat', sans-serif;
+    
 }
 
 h1 {
@@ -16,6 +17,15 @@ h1 {
 
 h2, h3, h4 {
     font-weight: 700;
+    color: #bf4062;
+}
+
+h3 {
+    color: #e5b3c0;
+}
+
+h4 {
+    color: #000
 }
 
 #custom-navbar a {
@@ -101,4 +111,24 @@ h2, h3, h4 {
     background-color: #fff;
     color: #bf4062;
     border: 2px solid #bf4062; 
+}
+
+
+/* Services CSS */
+.container-left-services {
+    clip-path: polygon(0 0, 77% 0, 0 43%, 24% 100%, 100% 100%, 100% 65%, 24% 100%, 0 43%);
+    background-color: #718CA6;
+    opacity: 0.6;
+}
+
+.container-description-services {
+    background-color: #f9f9f9;
+}
+
+.description-services {
+    font-size: 0.8rem;
+}
+
+.title-description-services {
+    font-size: 1rem;
 }

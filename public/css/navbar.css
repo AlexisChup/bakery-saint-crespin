@@ -1,0 +1,8 @@
+#custom-navbar a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+#custom-navbar .custom-navbar-title {
+    font-weight: 900;
+}

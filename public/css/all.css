@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+h1, h2, h3, h4 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-weight: 900;
+}
+
+h2, h3, h4 {
+    font-weight: 700;
+}
+
+#custom-navbar a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+#custom-navbar .active a {
+    color: #bf4062;
+}
+
+#custom-navbar .custom-navbar-title {
+    font-weight: 900;
+}
+
+.navbar-light .navbar-nav .nav-item .nav-link {
+    color: #e5b3c0;
+    transition: 0.3s ease;
+}
+
+.navbar-light .navbar-nav .nav-item .nav-link:hover {
+    color: #bf4062;
+}
+
+.custom-navbar-div-toggled {
+    transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.title-presentation {
+    font-weight: 900;
+}
+
+.subtitle-presentation {
+    font-size: 1.5rem;
+}
+
+#table-presentation td {
+    border-top: 0;
+}
+
+.blur-image {
+    border: 0px solid rgba(180, 180, 180, 0.2);
+    border-radius: 7000px;
+}
+
+.container-imgage-presentation {
+    transform: rotate(180deg);
+}
+
+.cookies-presentation {
+    -webkit-clip-path: polygon(0 0, 0% 100%, 100% 0);
+    clip-path: polygon(0 0, 0% 100%, 100% 0);
+}
+
+.title-header-title {
+    font-size: 0.9rem;
+}
+
+.title-table {
+    font-size: 0.8rem;
+    text-align: right;
+}
+.text-table {
+    font-size: 0.7rem;
+    text-align: right;
+}
+
+.container-right-presentation {
+    clip-path: polygon(100% 45%, 0% 100%, 100% 100%);
+    background-color: #e5b3c0;
+    opacity: 0.4;
+}
+
+.discover-btn-presentation {
+    background-color: #bf4062;
+    color: #fff;
+    border: 2px solid #fff;
+    transition: 0.5s ease;
+    border-radius: 7px;
+}
+
+.discover-btn-presentation:hover {
+    background-color: #fff;
+    color: #bf4062;
+    border: 2px solid #bf4062; 
+}

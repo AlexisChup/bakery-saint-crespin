@@ -132,3 +132,36 @@ h4 {
 .title-description-services {
     font-size: 1rem;
 }
+
+#services h2 {
+    font-size: 1.2rem;;
+}
+
+#services h3 {
+    font-size: 1.5rem;;
+}
+
+/* Contact CSS */
+
+
+/* Footer CSS */
+#footer {
+    background-image: url('/public/images/croissant.jpg');
+    max-height: 500px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+#footer .container-footer {
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(117,117,117,0) 100%);
+}
+
+#footer .container-footer h3 {
+    font-size: 1.2rem;
+}
+
+#footer #table-presentation .title-table, .text-table {
+    color: #fff
+}

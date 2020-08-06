@@ -7,12 +7,16 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!-- <link rel="stylesheet" href="../public/bootstrap-4.5.0-dist/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="./public/css/all.css">
+    <link rel="stylesheet" href="./public/css/mobile-all.css">
     <title>Accueil</title>
 </head>
 <body>
-    <section id='custom-navbar' class='position-sticky'>
-        <nav class="navbar navbar-expand-sm navbar-light p-3 bg-light shadow mb-2 bg-white rounded">
-            <a class="navbar-brand custom-navbar-title" href="#">Boulangerie</a>
+    <section id='custom-navbar' class="sticky-top">
+        <nav class="navbar navbar-expand-sm navbar-light p-3 bg-light shadow mb-2 bg-white rounded ">
+            <a class="navbar-brand custom-navbar-title" href="#">
+                Boulangerie
+                <img style='height: 50px; width: 50px; object-fit: contain' class="mx-0" src="./public/images/logo.PNG" alt="old-logo">
+            </a>
             <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
                 aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -20,94 +24,45 @@
             <div class="collapse navbar-collapse custom-navbar-div-toggled" id="collapsibleNavId">
                 <ul class="navbar-nav ml-auto mt-lg">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Accueil</a>
+                        <a id="anchor-presenation" class="nav-link" >Accueil</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a id="anchor-services" class="nav-link" href="#">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a id="anchor-contact" class="nav-link">Contact</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </section>
-    <section class="accueil p-4">
-        <div class="col-md-12">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="row mb-5">
-                        <img class="img-fluid cookies-presentation" src="./public/images/cookies-presentation.jpg" alt="cookies-presentation">
-                    </div>
-                    <div class="row">
-                        <div class="w-100">
-                            <div class="">
-                                <h2 class="text-right font-weight-bold title-header-title">Horaires d'ouvertures :</h2>
-                            </div>
-                            <table class="table border-0" id='table-presentation'>
-                                <thead>
-                                    <tr>
-                                      <th class="title-table" width="30%" scope="col"></th>
-                                      <th class="title-table" width="35%" scope="col">Matin</th>
-                                      <th class="title-table" width="35%" scope="col">Après-midi</th>
-                                    </tr>
-                                  </thead>
-                                <tr class="">
-                                    <td class="text-table text-left" width="30%">Lundi - Samedi</td>
-                                    <td class="text-table" width="35%">6h30 - 13h</td>
-                                    <td class="text-table" width="35%">15h30 - 19h30</td>
-                                </tr>
-                                <tr>
-                                    <td class="text-table text-left" width="30%">Dimanche</td>
-                                    <td class="text-table" width="35%">7h30 - 13h</td>
-                                    <td class="text-table" width="35%">Fermé</td>
-                                </tr>
-                                <tr>
-                                    <td class="text-table text-left" width="30%">Mercredi</td>
-                                    <td class='text-table' width="35%">Fermé</td>
-                                    <td class="text-table" width="35%">Fermé</td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
+    <section id="presentation" class="accueil p-4">
+        <div class="col-md-12  d-flex justify-content-center">
+            <div class="row flex-column justify-content-center align-items-center">
+                <div class="row justify-content-center align-items-center">
+                    <h1 class="title-presentation text-center">BOULANGER PATISSIER</h1>
                 </div>
-                <div class="col-md-6 d-flex justify-content-center">
-                    <div class="row justify-content-center">
-                        <div class="row">
-                            <img width="200px" class="" src="./public/images/logo.PNG" alt="old-logo">
-                        </div>
-                        <div class="w-100"></div>
-                        <div class="row justify-content-center align-items-center">
-                            <h1 class="title-presentation">BOULANGER PATISSIER</h1>
-                            <div class="w-100"></div>
-                            <span class="font-italic subtitle-presentation">Artisan</span>
-                        </div>
-                        <div class="row w-50 p-5 justify-content-center overflow-hidden container-imgage-presentation">
-                            <img class="img-fluid blur-image shadow-lg bg-white m-0" src="./public/images/home-page-presentation.png" alt="image-de-presentation">
-                        </div>
-                    </div>
+                <div class="row justify-content-center align-items-center">
+                    <img class="container-logo-presenation" src="./public/images/logo.PNG" alt="old-logo">
                 </div>
-                <div class="col-md-3 align-items-center d-flex justify-content-center ">
-                    <div class="position-absolute container-right-presentation h-100 w-100">
-                            
-                    </div>
-                    <div class="d-flex flex-column align-items-center">
-                        <a href="#" class="text-decoration-none p-2 font-weight-bolder discover-btn-presentation">Nous découvrir</a>
-                    </div>
+                <div class="row justify-content-center align-items-center mb-2">
+                    <span class="font-italic subtitle-presentation">Artisan</span>
+                </div>
+                <div class="row justify-content-center align-items-center overflow-hidden">
+                    <img class="container-imgage-presentation shadow-lg bg-white m-0" src="./public/images/home-page-presentation.png" alt="image-de-presentation">
                 </div>
             </div>
         </div>
     </section>
     <section class="services" id="services">
-        <div class="col-md-12 p-4">
+        <div class="col-md-12 p-4" id="services-col-md-12">
             <div class="row mx-0 p-5">
                 <div class="col-md-4 bg-light align-items-center d-flex justify-content-center">
                     <div class="row align-items-center d-flex justify-content-center overflow-hidden">
-                        <!-- <div class="position-absolute container-left-services h-100 w-100 "></div> -->
                         <img src="./public/images/services.jpg" class='image-service  img-fluid' alt="nos-services">
                     </div>
                 </div>
-                <div class="col-md-8 pl-5 d-flex">
+                <div  class="col-md-8 pl-5 d-flex container-services" id="container-services">
                     <div class="row mx-0 py-5 d-flex align-items-center align-content-center">
                         <div class="row mx-0 flex-column">
                             <div class="row mx-0 m-0">
@@ -118,9 +73,9 @@
                             </div>
                         </div>
                         <div class="row mx-0 my-3">
-                            <div class="col-md-7 shadow p-2 container-description-services">
+                            <div class="col-md-7 shadow p-4 container-description-services">
                                 <div class="row">
-                                    <div class="col-md-4">
+                                    <div class="col-md-4 my-auto">
                                         <img class='img-fluid overflow-hidden' src="./public/images/bread.PNG" alt="pain">
                                     </div>
                                     <div class="col-md-8 d-flex justify-content-center flex-column">
@@ -133,9 +88,9 @@
                             </div>
                         </div>
                         <div class="row mx-0 my-3">
-                            <div class="col-md-7 shadow p-2 container-description-services">
+                            <div class="col-md-7 shadow p-4 container-description-services">
                                 <div class="row">
-                                    <div class="col-md-4">
+                                    <div class="col-md-4 my-auto">
                                         <img class='img-fluid overflow-hidden' src="./public/images/pastry.PNG" alt="patisserie">
                                     </div>
                                     <div class="col-md-8 d-flex justify-content-center flex-column">
@@ -148,9 +103,9 @@
                             </div>
                         </div>
                         <div class="row mx-0 my-3">
-                            <div class="col-md-7 shadow p-2 container-description-services">
+                            <div class="col-md-7 shadow p-4 container-description-services">
                                 <div class="row">
-                                    <div class="col-md-4">
+                                    <div class="col-md-4 my-auto">
                                         <img class='img-fluid overflow-hidden' src="./public/images/sandwich.png" alt="sandwich">
                                     </div>
                                     <div class="col-md-8 d-flex justify-content-center flex-column">
@@ -172,7 +127,7 @@
     <section id='footer' class="footer">
         <div class="col-md-12">
             <div class="row container-footer p-5">
-                <div class="col-md-4  justify-content-center d-flex flex-column">
+                <div class="col-md-4 justify-content-center d-flex flex-column">
                     <h3>Horaires d'ouvertures</h3>
                     <table class="table border-0" id='table-presentation'>
                         <thead>
@@ -200,23 +155,23 @@
                     </table>
                 </div>
                 <div class="col-md-4 justify-content-center d-flex">
-                    <img class='h-auto' width='250px' src="./public/images/logo.PNG" alt="logo">
+                    <img class="container-logo-presenation" src="./public/images/logo.PNG" alt="logo">
                 </div>
                 <div class="col-md-4 justify-content-center d-flex flex-column">
                     <h3>Adresse</h3>
-                    <div class="row mx-0 h-100">
+                    <div class="row mx-0">
                         <span class='text-white'>1bis Rue du Fief d'Ares, 49230 Sèvremoine</span>
                     </div>
                 </div>
-                <div class="h-100"></div>
             </div>
         </div>
     </section>
     
 
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="./public/js/handleNavbarNavigation.js"></script>
 </body>
 </html>

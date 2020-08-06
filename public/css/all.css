@@ -1,3 +1,5 @@
+/* GLOBAL */
+
 * {
     margin: 0;
     padding: 0;
@@ -28,6 +30,8 @@ h4 {
     color: #000
 }
 
+/* NAVBAR */
+
 #custom-navbar a {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
@@ -54,6 +58,8 @@ h4 {
     transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
+/* PRESENTATION */
+
 .title-presentation {
     font-weight: 900;
 }
@@ -66,18 +72,19 @@ h4 {
     border-top: 0;
 }
 
-.blur-image {
-    border: 0px solid rgba(180, 180, 180, 0.2);
-    border-radius: 7000px;
+.container-logo-presenation {
+    height: auto; 
+    width: 25%; 
+    object-fit: contain
 }
 
 .container-imgage-presentation {
     transform: rotate(180deg);
-}
-
-.cookies-presentation {
-    -webkit-clip-path: polygon(0 0, 0% 100%, 100% 0);
-    clip-path: polygon(0 0, 0% 100%, 100% 0);
+    height: auto; 
+    width: 30%; 
+    object-fit: contain;
+    border: 1px solid transparent;
+    border-radius: 2000px;
 }
 
 .title-header-title {
@@ -91,12 +98,6 @@ h4 {
 .text-table {
     font-size: 0.7rem;
     text-align: right;
-}
-
-.container-right-presentation {
-    clip-path: polygon(100% 45%, 0% 100%, 100% 100%);
-    background-color: #e5b3c0;
-    opacity: 0.4;
 }
 
 .discover-btn-presentation {
@@ -114,13 +115,7 @@ h4 {
 }
 
 
-/* Services CSS */
-.container-left-services {
-    clip-path: polygon(0 0, 77% 0, 0 43%, 24% 100%, 100% 100%, 100% 65%, 24% 100%, 0 43%);
-    background-color: #718CA6;
-    opacity: 0.6;
-}
-
+/* SERVICES */
 .container-description-services {
     background-color: #f9f9f9;
 }
@@ -141,10 +136,10 @@ h4 {
     font-size: 1.5rem;;
 }
 
-/* Contact CSS */
+/* CONTACT */
 
 
-/* Footer CSS */
+/* FOOTER */
 #footer {
     background-image: url('/public/images/croissant.jpg');
     max-height: 500px; /* You must set a specified height */

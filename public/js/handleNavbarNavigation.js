@@ -5,7 +5,7 @@ $("#collapsibleNavId .nav-item").click(function(){
 
 $("#anchor-presenation").click(function() {
     $('html, body').animate({
-        scrollTop: $("#presentation").offset().top
+        scrollTop: 0
     }, 2000);
 });
 

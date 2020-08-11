@@ -30,6 +30,28 @@ h4 {
     color: #000
 }
 
+/* COMMON CSS */
+.image-full-height {
+    width: auto; 
+    height: 100%; 
+    object-fit: contain
+}
+
+.image-half-height {
+    width: auto; 
+    height: 50%; 
+    object-fit: contain
+}
+.image-30-height {
+    width: auto; 
+    height: 30%; 
+    object-fit: contain
+}
+
+.container-image-full-height {
+    overflow: hidden;
+}
+
 /* NAVBAR */
 
 #custom-navbar a {
@@ -74,7 +96,7 @@ h4 {
 
 .container-logo-presenation {
     height: auto; 
-    width: 25%; 
+    width: 40%; 
     object-fit: contain
 }
 
@@ -135,6 +157,7 @@ h4 {
 #services h3 {
     font-size: 1.5rem;;
 }
+
 
 /* CONTACT */
 

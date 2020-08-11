@@ -40,4 +40,8 @@
     #footer {
         max-height: 700px; /* You must set a specified height */
     }
+
+    #container-image-services {
+        display: none;
+    }
 }

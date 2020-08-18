@@ -165,16 +165,9 @@ h4 {
 
 /* FOOTER */
 #footer {
-    background-image: url('/public/images/croissant.jpg');
-    max-height: 500px; /* You must set a specified height */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
 }
 
 #footer .container-footer {
-    background: rgb(2,0,36);
-    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(117,117,117,0) 100%);
 }
 
 #footer .container-footer h3 {
@@ -182,5 +175,12 @@ h4 {
 }
 
 #footer #table-presentation .title-table, .text-table {
-    color: #fff
+    color: #000
+}
+
+/* IMAGE FOOTER */
+#image-footer {
+    height: auto; 
+    width: 100%; 
+    object-fit: contain;
 }

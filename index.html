@@ -2,11 +2,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">   
+    <link rel="icon" href="./public/images/logo.PNG"  sizes="any">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Raleway:ital,wght@0,400;1,500&display=swap" rel="stylesheet">
-    <link rel="icon" href="./public/images/logo.PNG"  sizes="16x16">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <!-- <link rel="stylesheet" href="../public/bootstrap-4.5.0-dist/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="./public/css/main.css">
     <link rel="stylesheet" href="./public/css/all.css">
     <link rel="stylesheet" href="./public/css/mobile-all.css">
@@ -48,7 +54,7 @@
                 <div class="col-md-6">
                     <div class="row align-items-center flex-column">
                         <h1 class="title-presentation text-center">BOULANGER PATISSIER</h1>
-                        <img class="container-logo-presenation my-5" src="./public/images/logo.PNG" alt="old-logo">
+                        <img class="container-logo-presenation my-5 my-4" src="./public/images/logo.PNG" alt="old-logo">
                         <span class="font-italic subtitle-presentation">Artisan</span>
                     </div>
                 </div>
@@ -66,9 +72,9 @@
                 </div>
                 <div class="col-md-6 d-flex mx-0 pl-0 pl-3 container-services" id="container-services">
                     <div class="row mx-0 my-3 flex-column justify-content-between">
-                        <h2>Services</h2>
+                        <h2>Produits</h2>
                         <h3>Les différents services que nous proposons</h3>
-                        <div class="shadow p-2 container-description-services my-2">
+                        <div id="product-bakery" class="shadow wow fadeInRight p-2 container-description-services my-2" data-wow-delay="0.6s">
                             <div class="row">
                                 <div class="col-md-3 my-auto">
                                     <img class='img-fluid overflow-hidden' src="./public/images/bread.PNG" alt="pain">
@@ -81,7 +87,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="shadow p-2 container-description-services my-2">
+                        <div id="product-patisserie" class="shadow wow fadeInRight p-2 container-description-services my-2" data-wow-delay="0.6s">
                             <div class="row">
                                 <div class="col-md-3 my-auto">
                                     <img class='img-fluid overflow-hidden' src="./public/images/pastry.PNG" alt="patisserie">
@@ -94,7 +100,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="shadow p-2 container-description-services my-2">
+                        <div id="product-sandwich" class="shadow wow fadeInRight p-2 container-description-services my-2" data-wow-delay="0.6s">
                             <div class="row">
                                 <div class="col-md-3 my-auto">
                                     <img class='img-fluid overflow-hidden' src="./public/images/sandwich.png" alt="sandwich">
@@ -117,6 +123,9 @@
     </section>
     <section id='contact' class="contact p-3 my-3">
         <div class="row">
+            <div class="col-md-4 container-image-full-height d-flex justify-content-center align-items-center">
+                <img src="./public/images/letter.png" class='image-30-height overflow-hidden' alt="Envoie d'email">
+            </div>
             <div class="col-md-8">
                 <form class="contact100-form validate-form p-5">
                     <span class="contact100-form-title">
@@ -151,9 +160,7 @@
                     </div>
                 </form>
             </div>
-            <div class="col-md-4 container-image-full-height d-flex justify-content-center align-items-center">
-                <img src="./public/images/letter.png" class='image-30-height overflow-hidden' alt="Envoie d'email">
-            </div>
+
         </div>
     </section>
     <section id='footer' class="footer">
@@ -201,10 +208,22 @@
     
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous"></script>
+<script>
+new WOW().init();
+</script>
+
+
 <script src="./public/js/handleNavbarNavigation.js"></script>
+<script src="./public/js/handleAnimation.js"></script>
 
 </body>
 </html>

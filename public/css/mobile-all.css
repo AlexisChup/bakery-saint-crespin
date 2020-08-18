@@ -34,14 +34,14 @@
     #container-services {
         margin-right: 15px;
     }
+    
+    #container-image-services {
+        display: none;
+    }
 
     /* FOOTER */
 
     #footer {
         max-height: 700px; /* You must set a specified height */
-    }
-
-    #container-image-services {
-        display: none;
     }
 }

@@ -56,7 +56,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 p {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	font-size: 14px;
 	line-height: 1.7;
 	color: #666666;
@@ -242,8 +242,9 @@ iframe {
 
 .label-input100 {
   font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
   font-size: 15px;
-  color: #999999;
+  color: #555555;
   line-height: 1.5;
   padding-left: 5px;
 }
@@ -254,7 +255,7 @@ iframe {
   background: transparent;
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
-  color: #555555;
+  color: #999999;
   line-height: 1.2;
   padding: 0 5px;
 }

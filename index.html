@@ -2,6 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">   
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="icon" href="./public/images/logo.PNG"  sizes="any">
     
     <!-- Font Awesome -->
@@ -82,7 +83,7 @@
                                 <div class="col-md-9 d-flex justify-content-center flex-column">
                                     <h4 class='title-description-services'>Boulangerie</h4>
                                     <p class="description-services">
-                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam praesentium reiciendis, eveniet ipsa est quas!
+                                        Du petit déjeunez au dîner vous ne pourrez plus vous passer de notre pain.
                                     </p>
                                 </div>
                             </div>
@@ -95,7 +96,7 @@
                                 <div class="col-md-9 d-flex justify-content-center flex-column">
                                     <h4 class='title-description-services'>Pâtisserie</h4>
                                     <p class="description-services">
-                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam praesentium reiciendis, eveniet ipsa est quas!
+                                        Des plaisirs sucrés pour tous les goûts. Fruit ou chocolat, quel sera votre gourmandise ? 
                                     </p>
                                 </div>
                             </div>
@@ -108,7 +109,7 @@
                                 <div class="col-md-9 d-flex justify-content-center flex-column">
                                     <h4 class='title-description-services'>Sandwicherie</h4>
                                     <p class="description-services">
-                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam praesentium reiciendis, eveniet ipsa est quas!
+                                        Pas le temps de cuisiner ? Choisissez votre sandwich. Garnis de tomates ou de jambon vous ne serez pas déçu.
                                     </p>
                                 </div>
                             </div>
@@ -127,26 +128,27 @@
                 <img src="./public/images/letter.png" class='image-30-height overflow-hidden' alt="Envoie d'email">
             </div>
             <div class="col-md-8 p-5">
-                <form class="contact100-form validate-form p-5">
+                <form id="form-contact" class="contact100-form validate-form p-5">
+                    <div id="mail-status"></div>
                     <span class="contact100-form-title">
                         Contactez-nous
                     </span>
             
                     <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Le nom est nécessaire">
-                        <span class="label-input100">Nom</span>
-                        <input class="input100" type="text" name="name" placeholder="Entrez votre nom de famille">
+                        <span id="username-name-info" class="label-input100">Nom</span>
+                        <input class="input100 input-form-contact" type="text" id="username-name" name="username-name" placeholder="Entrez votre nom de famille">
                         <span class="focus-input100"></span>
                     </div>
             
                     <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate = "L'email doit être de la forme: nom@gmail.com">
-                        <span class="label-input100">Email</span>
-                        <input class="input100" type="text" name="email" placeholder="Entrez votre adresse e-mail">
+                        <span id="username-email-info" class="label-input100">Email</span>
+                        <input class="input100 input-form-contact" type="email" id="username-email" name="username-email" placeholder="Entrez votre adresse e-mail">
                         <span class="focus-input100"></span>
                     </div>
             
                     <div class="wrap-input100 validate-input" data-validate = "Le champ message est nécessaire">
-                        <span class="label-input100">Message</span>
-                        <textarea class="input100" name="message" placeholder="Écrivez votre demande ici"></textarea>
+                        <span id="username-message-info" class="label-input100">Message</span>
+                        <textarea class="input100 input-form-contact" id="username-message" name="username-message" placeholder="Écrivez votre demande ici"></textarea>
                         <span class="focus-input100"></span>
                     </div>
             
@@ -161,6 +163,27 @@
                 </form>
             </div>
 
+        </div>
+    </section>
+    <section id="modal" class="">        
+        <!-- Modal -->
+        <div class="modal fade" id="modal-confirmation" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h2 class="modal-title" id="exampleModalLabel">Formulaire</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                Votre demande a bien été prise en compte.
+                </div>
+                <div class="modal-footer">
+                <button type="button" id="modal-button-close" class="btn" data-dismiss="modal">Fermer</button>
+                </div>
+            </div>
+            </div>
         </div>
     </section>
     <section id="footer" class="footer">
@@ -230,6 +253,34 @@ new WOW().init();
 
 <script src="./public/js/handleNavbarNavigation.js"></script>
 <script src="./public/js/handleAnimation.js"></script>
+<script src="./public/js/handleForm.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("#form-contact").submit(function(e) {
+            console.log("Form valid. We will send email via php.")
+            e.preventDefault();
+            $.ajax({
+                url: "contactMail.php",
+                type: "POST",
+                data:'username-name='+$("#username-name").val()+'&username-email='+
+                'devale.info@gmail.com'
+                // $("#username-email").val()
+                +'&username-message='+
+                $("#username-message").val(),
+                success:function(data){
+                    // $("#mail-status").html(data);
+                    // $('#modal-confirmation').modal('toggle');
+                    console.log('Success sending request to php file.')
+                },
+                error:function (){
+                    console.log("Error sending request to php file.")
+                }
+            });
+        });
+    })
+    
+</script>
 
 </body>
 </html>
